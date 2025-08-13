@@ -10,8 +10,8 @@ base_url = "https://entrypointdailies.github.io/connect"
 
 
 [[sections]]
-title = "Links"
-description = "Look for me on these websites"
+title = "Connect with us"
+description = "We're found on these websites"
 direction = "row"
 item_style = "filled"
 icon_size = "30px"
