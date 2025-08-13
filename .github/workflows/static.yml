@@ -1,4 +1,4 @@
-name: Deploy Jake Website to GitHub Pages
+name: Deploy
 
 on:
   # Runs on pushes targeting the main branch
