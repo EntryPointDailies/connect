@@ -1,40 +1,8 @@
-<h1 align="center">
-  Jake
-</h1>
+Small website of where to find us around the internet, and a little about what we have done.
 
-<div align="center">
-  Jake is a tool that allows you to effortlessly create your one-link website and deploy it on your GitHub account.
-  <br />
-  <br />
-  <a href="https://thevahidal.github.io/jake">Demo</a>
-  <br />
-  <br />
-  <a href="https://thevahidal.github.io/jake">
-      <img src='docs/demo.png' style="">
-  </a>
-</div>
+# Contributing
 
-## Usage
-
-### 1. Clone Jake's Repository
-
-To get started, follow these steps to clone Jake's repository:
-
-1. Click [here](https://github.com/thevahidal/jake/fork) to clone Jake's repository.
-2. Choose a name for your repository. If you want your website to be deployed at `<yourusername>.github.io`, name your repository `<yourusername>.github.io`. Alternatively, you can choose any other name, such as `that-other-name`, which will result in your website being deployed at `<yourusername>.github.io/that-other-name/`.
-
-### 2. Enable GitHub Pages
-
-After creating the repository, you need to enable GitHub Pages. Follow these steps:
-
-1. Go to your repository's `Settings` tab.
-2. Navigate to the `Pages` section.
-3. Choose `GitHub Actions` as the source for your GitHub Pages.
-4. Click `Save` to apply the changes.
-
-### 3. Add your data
-
-To customize your website, follow these steps:
+To edit this website:
 
 1. Open your repository in your preferred text editor.
 2. Locate the `data.toml` file and update it with your information.
@@ -42,7 +10,7 @@ To customize your website, follow these steps:
 <details>
 <summary>Click to <b>Learn</b> all the available settings here</summary>
 
-#### General Information
+## Fields
 
 - `name`: Your name (e.g., "Vahid Al")
 - `description`: A brief bio about yourself (e.g., "Software Developer and passionate about creating things")
@@ -77,90 +45,6 @@ Each item is defined using `[[sections.items]]` and has the following components
 
 </details>
 
-### 4. Voila
-
-That's all you need to do. Now, you can sit back and relax while your website gets deployed. You can monitor the progress in the `Actions` tab of your repository. Once the deployment is complete, you can access your brand new one-link website at `<yourusername>.github.io` (If you chose `<yourusername>.github.io` as your repository name) or `<yourusername>.github.io/repo-name/`.
-
-### FAQ
-
-<details>
-<summary>1. How to configure my own <b>Custom Domain</b>?</summary>
-
-If you want to use your custom domain for your website hosted on GitHub Pages, it's a straightforward process. Just follow these steps:
-
-1. Go to the **Settings** tab of your GitHub repository.
-2. Select **Pages** tab in the sidebar.
-3. Under the **Custom domain** section, enter your desired domain name.
-4. Click **Save**.
-
-That's it! Your GitHub Pages site will now be accessible using your custom domain.
-
-For more detailed instructions and information on using a custom domain with GitHub Pages, you can refer to the [official GitHub Docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
-
-</details>
-
-<details>
-<summary>2. How to <b>manually</b> trigger the GitHub Action to deploy my website?</summary>
-
-1. In your repository, navigate to the "Actions" tab.
-2. Look for the workflow named "Deploy Jake Website to GitHub Pages" in the list of workflows.
-3. If you see an alert stating "This workflow has a workflow_dispatch event trigger," it means you can manually trigger the workflow.
-4. Click on the "Run Workflow" button. A new window will appear.
-5. Within the new window, click on the green "Run Workflow" button.
-6. GitHub Actions will initiate the deployment process for your static content to GitHub Pages.
-
-</details>
-
-<details>
-<summary>3. How to <b>update</b> my repository with the latest version of Jake?</summary>
-
-Since Jake is a template repository, users who create repositories from it won't automatically receive updates when changes are made to the original template. To update your repository with the latest changes while preserving your custom data (such as the `data.toml` file), follow these steps:
-
-1. **Create a backup of your custom data:**
-
-   - Before updating, make sure to back up the `data.toml` file or any other files that contain your specific customizations, as these may be overwritten during the update process.
-
-2. **Sync with the latest version of Jake:**
-
-   - In your repository, click on the "GitHub Desktop" or use the command line to fetch the latest changes from the original template.
-   - You can do this by adding the original repository as a remote:
-
-     ```bash
-     git remote add upstream https://github.com/thevahidal/jake.git
-     git fetch upstream
-     git merge upstream/main
-     ```
-
-   - This will merge the latest changes from the Jake template into your repository.
-
-3. **Resolve any conflicts:**
-
-   - If there are conflicts, especially in files like `data.toml`, you’ll need to manually merge the updates from the template with your custom data. The `data.toml` file is where your personal data is stored, so be careful not to overwrite your custom settings.
-
-4. **Push the changes:**
-
-   - Once you've resolved any conflicts, commit the changes and push them back to your repository.
-
-5. **Review your site:**
-   - After updating, review your website to ensure everything is still functioning as expected. You can monitor the progress of the update in the "Actions" tab of your repository.
-
-By following these steps, you can ensure that your repository stays up to date with the latest improvements from the Jake template while preserving your personal customizations.
-
-</details>
-
-### Jake's Friends
-
-Here’s a growing list of awesome people using **Jake**!  
-
-- [thevahidal](https://thevahidal.github.io/) – [thevahidal/thevahidal.github.io](https://github.com/thevahidal/thevahidal.github.io)
-
-Want to be featured here? Just open a pull request and add your site to the end of the list using the format below:
-
-```
-- [Your Website Name](Your Website URL) – [YourUsername/YourRepo](https://github.com/YourUsername/YourRepo)
-Example:
-- [thevahidal](https://thevahidal.github.io/) – [thevahidal/thevahidal.github.io](https://github.com/thevahidal/thevahidal.github.io)
-```
 
 ### Local Development
 
@@ -178,7 +62,7 @@ Ensure the following are installed:
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/your-username/jake.git
+git clone https://github.com/entrypointdailies/connect.git
 cd jake
 ```
 
@@ -217,10 +101,6 @@ Run it with:
 ```bash
 ./local_run.sh
 ```
-
-## Contributing
-
-If you find any issues or have suggestions for improvement, please feel free to contribute by submitting a pull request or creating an issue in the repository.
 
 ## License
 
